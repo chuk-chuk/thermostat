@@ -10,4 +10,11 @@ describe ("Thermostat", function(){
       expect(thermostat.getTemp()).toEqual(20);
     });
   });
+
+  describe('increaseTemp', function(){
+    it('increases the current temperature', function(){
+      thermostat.increaseTemp(1);
+      expect(thermostat.getTemp()).toEqual(21);
+    });
+  });
 });
