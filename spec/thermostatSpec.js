@@ -57,8 +57,31 @@ describe ("Thermostat", function(){
       thermostat.increaseTemp(13);
       expect(thermostat.getTemp()).toEqual(32);
     });
+  });
 
+  describe('reset', function(){
+    it('resets the temp to 20', function(){
+      thermostat.increaseTemp(3);
+      thermostat.reset();
+      expect(thermostat.getTemp()).toEqual(20);
+    });
+  });
 
+  describe('energy usage', function(){
+    it('low-usage if temp < 18', function(){
+      thermostat.decreaseTemp(3);
+      expect(thermostat.getEnergyUsage()).toEqual('low-usage');
+    });
+
+    it('medium-usage if temp < 25', function(){
+      thermostat.increaseTemp(4);
+      expect(thermostat.getEnergyUsage()).toEqual('medium-usage');
+    });
+
+    it('high-usage if temp >= 25', function(){
+      thermostat.increaseTemp(6);
+      expect(thermostat.getEnergyUsage()).toEqual('high-usage');
+    });
   });
 
 });
