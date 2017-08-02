@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Thermostat</title>
+
 </head>
 <body>
   <article>
@@ -16,9 +17,9 @@
       <p class="energy_usage_display"></p>
     </section>
     <section class="temperature_buttons">
-      <button type="button" name="decrease">Colder</button>
-      <button type="button" name="increase">Hotter</button>
-      <button type="button" name="reset">Reset</button>
+      <button class="decrease" type="button" name="decrease">Colder</button>
+      <button class="increase" type="button" name="increase">Hotter</button>
+      <button class="reset" type="button" name="reset">Reset</button>
     </section>
     <section class="power_mode">
       <button type="button" name="on">PSM On</button>
@@ -28,7 +29,9 @@
   <aside class="image">
     <img src="" alt="">
   </aside>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="../src/thermostat.js"></script>
+  <script src="../src/interface.js"></script>
 </body>
 <footer>
 </footer>
