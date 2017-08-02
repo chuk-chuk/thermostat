@@ -23,5 +23,10 @@ describe ("Thermostat", function(){
       thermostat.decreaseTemp(1);
       expect(thermostat.getTemp()).toEqual(19);
     });
+
+    it("won't decrease the temperature below 10", function(){
+      thermostat.decreaseTemp(11);
+      expect(thermostat.getTemp()).toEqual(10);
+    });
   });
 });

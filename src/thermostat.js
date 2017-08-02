@@ -11,5 +11,9 @@ Thermostat.prototype.increaseTemp = function(amount){
 };
 
 Thermostat.prototype.decreaseTemp = function(amount){
-  this.temperature -= amount;
+  if (this.getTemp() - amount < 10){
+    this.temperature = 10;
+  } else {
+    this.temperature -= amount;
+  }
 };
