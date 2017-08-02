@@ -2,19 +2,20 @@
 <html>
 <head>
   <title>Thermostat</title>
-
+  <link rel="stylesheet" href="../src/style.css" type="text/css"/>
 </head>
 <body>
   <article>
     <h1>Thermostat</h1>
     <section class="temperature">
-      <h2 class="temp_display"></h2>
+      <h2 id="temp_display"></h2>
     </section>
     <section class="power_saving_mode">
       <h2 class="psm_display">Power saving mode is on</h2>
     </section>
     <section class="energy_usage">
-      <p class="energy_usage_display"></p>
+      <p>Energy</p>
+      <p class="energy_usage_display">medium-usage</p>
     </section>
     <section class="temperature_buttons">
       <button class="decrease" type="button" name="decrease">Colder</button>
@@ -32,6 +33,7 @@
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="../src/thermostat.js"></script>
   <script src="../src/interface.js"></script>
+  <link src="../src/interface.js"></script>
 </body>
 <footer>
 </footer>
