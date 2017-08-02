@@ -17,4 +17,11 @@ describe ("Thermostat", function(){
       expect(thermostat.getTemp()).toEqual(21);
     });
   });
+
+  describe('decreaseTemp', function(){
+    it('decreases the current temperature', function(){
+      thermostat.decreaseTemp(1);
+      expect(thermostat.getTemp()).toEqual(19);
+    });
+  });
 });
