@@ -15,11 +15,17 @@
     <script src="../src/thermostat.js"></script>
     <script src="../src/interface.js"></script>
     <script src="../public/js/bootstrap.min.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <link href=“https://fonts.googleapis.com/css?family=Roboto+Mono:700” rel=“stylesheet”>    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
   <title>Thermostat</title>
 </head>
 <body>
-  <article>
+  <div class="container-fluid">
+    <div>
+    <div class="row">
+
+  <div class="weather-container col-sm-6">
+
+  <article class="centered-content">
 
     <h1>Weather for</h1>
 
@@ -44,11 +50,15 @@
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
-<p class='city-name-display'></p>
-<p class="weather-status"></p>
-<p class="humidity-status"></p>
+<p class='city-name-display'>-</p>
+<p class="weather-status">-</p>
+<p class="humidity-status">-</p>
+</article>
+</div>
 
+<div class="thermostat-container col-sm-6">
 
+  <article class="centered-content">
 
     <h1>Thermostat</h1>
     <section class="temperature">
@@ -72,11 +82,19 @@
     </section>
   </article>
   <aside class="image">
-    <img src="" alt="">
+    <!-- <img src="" alt=""> -->
   </aside>
+
+</div>
+
+  </div>
+
+  </div>
+
+</div>
+
   <footer>
   </footer>
-
 </body>
 
 </html>

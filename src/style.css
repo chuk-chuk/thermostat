@@ -9,3 +9,63 @@
 .high-usage {
   color: red;
 }
+
+.centered-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+article {
+  max-width: 400px;
+}
+.row {
+  display:inline-block;
+margin-top: 20%;
+}
+
+.thermostat-container {
+  width: 100%;
+  text-align: center;
+  display:inline-block;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  /*border: 5px solid black;*/
+  border-radius: 50%;
+  background-color: #60E0CF;
+  -webkit-box-shadow: 55px -34px 52px 12px rgba(14,46,29,0.91);
+  -moz-box-shadow: 55px -34px 52px 12px rgba(14,46,29,0.91);
+  box-shadow: 55px -34px 52px 12px rgba(14,46,29,0.91);
+}
+
+p {
+  font-size: 30px;
+}
+
+.weather-container {
+  text-align: center;
+  vertical-align: middle;
+  display:inline-block;
+
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  /*border: 5px solid black;*/
+  border-radius: 50%;
+  background-color: #8079BD;
+  -webkit-box-shadow: 55px -34px 52px 12px rgba(14,46,29,0.91);
+  -moz-box-shadow: 55px -34px 52px 12px rgba(14,46,29,0.91);
+  box-shadow: 55px -34px 52px 12px rgba(14,46,29,0.91);
+}
+
+body {
+  background: #22c1c3 ;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdbb2d , #22c1c3 );  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d , #22c1c3 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position:relative;
+  font-family: ‘Roboto Mono’, monospace;
+}

@@ -18,6 +18,10 @@ Thermostat.prototype.increaseTemp = function(amount){
   }
 };
 
+$('.dropdown-inverse li > a').click(function(e){
+    $('.btnStatus').text(this.innerHTML);
+});
+
 Thermostat.prototype.decreaseTemp = function(amount){
   if (this.getTemp() - amount < this.MINIMUM_TEMPERATURE){
     this.temperature = this.MINIMUM_TEMPERATURE;

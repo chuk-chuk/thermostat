@@ -15,6 +15,14 @@ $(document).ready(function(){
     updateTemperature();
   });
 
+  $('.city li > a').click(function(e){
+    $('.weather-status').text(this.innerHTML);
+  });
+
+  $('.city').click(function(e){
+    $('.weather-status').text($('input:text').val());
+  });
+
   $('.reset').on('click', function(){
     thermostat.reset();
     $('#temp_display').text(thermostat.getTemp());
