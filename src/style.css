@@ -18,12 +18,16 @@
   transform: translate(-50%, -50%);
 }
 
+.input-group {
+  margin-bottom: 40px;
+}
+
 article {
   max-width: 400px;
 }
 .row {
   display:inline-block;
-margin-top: 20%;
+  margin-top: 10%;
 }
 
 .thermostat-container {
@@ -60,6 +64,17 @@ p {
   -moz-box-shadow: 55px -34px 52px 12px rgba(14,46,29,0.91);
   box-shadow: 55px -34px 52px 12px rgba(14,46,29,0.91);
 }
+#temp_display {
+  font-size: 70px;
+}
+
+.psm_display {
+  font-size: 20px;
+}
+
+.energy_usage_display {
+  font-size: 20px;
+}
 
 body {
   background: #22c1c3 ;  /* fallback for old browsers */
@@ -67,5 +82,5 @@ body {
   background: linear-gradient(to right, #fdbb2d , #22c1c3 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   position:relative;
-  font-family: ‘Roboto Mono’, monospace;
+  font-family: 'Audiowide', cursive;
 }
