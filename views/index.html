@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Bootstrap -->
+
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css" type="text/css"/>
+
+    <!-- <script src="../public/js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../src/thermostat.js"></script>
+    <script src="../src/interface.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
   <title>Thermostat</title>
-  <link rel="stylesheet" href="../src/style.css" type="text/css"/>
 </head>
 <body>
   <article>
+
+    <h1>Weather for</h1>
+
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Select City
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">London</a></li>
+    <li><a href="#">Severodvinsk</a></li>
+    <li><a href="#">Mexico City</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<p class="weather-status">weather-status</p>
+
+
     <h1>Thermostat</h1>
     <section class="temperature">
       <h2 id="temp_display"></h2>
@@ -18,22 +52,18 @@
       <p class="energy_usage_display">medium-usage</p>
     </section>
     <section class="temperature_buttons">
-      <button class="decrease" type="button" name="decrease">Colder</button>
-      <button class="increase" type="button" name="increase">Hotter</button>
-      <button class="reset" type="button" name="reset">Reset</button>
+      <button class="decrease btn-default" name="decrease">Colder</button>
+      <button class="increase btn-default" type="button" name="increase">Hotter</button>
+      <button class="reset btn-default" type="button" name="reset">Reset</button>
     </section>
     <section class="power_mode">
-      <button class="psm_on" type="button" name="on">PSM On</button>
-      <button class="psm_off" type="button" name="off">PSM Off</button>
+      <button class="psm_on btn-default" type="button" name="on">PSM On</button>
+      <button class="psm_off btn-default" type="button" name="off">PSM Off</button>
     </section>
   </article>
   <aside class="image">
     <img src="" alt="">
   </aside>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="../src/thermostat.js"></script>
-  <script src="../src/interface.js"></script>
-  <link src="../src/interface.js"></script>
 </body>
 <footer>
 </footer>
