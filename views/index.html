@@ -23,21 +23,31 @@
 
     <h1>Weather for</h1>
 
+    <div class="input-group">
+          <span class="input-group-btn">
+            <button class="btn btn-default city" type="button">Go!</button>
+          </span>
+          <input type="text" class="form-control" placeholder="Search for a city's current tempertature">
+    </div>
+
 <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  <button class="btn btn-default dropdown-toggle" id='city' type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Select City
     <span class="caret"></span>
   </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+  <ul class="dropdown-menu" id='citylist' aria-labelledby="dropdownMenu1">
     <li><a href="#">London</a></li>
     <li><a href="#">Severodvinsk</a></li>
     <li><a href="#">Mexico City</a></li>
+    <li><a href="#">Paris</a></li>
     <li role="separator" class="divider"></li>
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
+<p class='city-name-display'></p>
+<p class="weather-status"></p>
+<p class="humidity-status"></p>
 
-<p class="weather-status">weather-status</p>
 
 
     <h1>Thermostat</h1>
@@ -64,7 +74,9 @@
   <aside class="image">
     <img src="" alt="">
   </aside>
+  <footer>
+  </footer>
+
 </body>
-<footer>
-</footer>
+
 </html>

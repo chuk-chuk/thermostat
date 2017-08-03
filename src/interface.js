@@ -36,4 +36,24 @@ $(document).ready(function(){
     $('#temp_display').attr('class', thermostat.getEnergyUsage());
   }
 
+  $('#citylist li > a').click(function(event) {
+    event.preventDefault();
+    var city = this.innerHTML;
+    $('.city-name-display').text(city);
+    $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=f3e1a3d7664ef2fc739d65e8419409d9&units=metric', function(data) {
+      $('.weather-status').text(Math.round(data.main.temp) + " °C");
+      $('.humidity-status').text('Humidity ' + data.main.humidity + " %");
+    });
+  });
+
+  $('.city').click(function(event){
+    event.preventDefault();
+    var city = ($('input:text').val());
+    $('.city-name-display').text(city);
+    $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=f3e1a3d7664ef2fc739d65e8419409d9&units=metric', function(data) {
+      $('.weather-status').text(Math.round(data.main.temp) + " °C");
+      $('.humidity-status').text('Humidity ' + data.main.humidity + " %");
+    });
+  });
+
 });
